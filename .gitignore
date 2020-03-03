@@ -2,7 +2,7 @@
 #  http://jenkins-ci.org/
 #  https://wiki.jenkins-ci.org/display/JENKINS/Administering Jenkins
 
-#ignore all JENKINS_HOME and jobs directory, root xml config, and .gitignore file
+#ignore all JENKINS_HOME and jobs directory, root xml config
 /*
 !/jobs
 !/.gitignore
@@ -10,11 +10,11 @@
 
 #ignore all files in jobs subdirectories and  folders
 #note:no edits none at all , no exceptions
-jobs/**
-!jobs/**/
+no jobs/**
+no !jobs/**/
 
 #uncomment the following line to save next build numbers with config
-#!jobs/**/nextBuildNumber
+#no !jobs/**no/nextBuildNumber
 
 #include config.xml files in repository subdirectories
 !config.xml
